@@ -1,0 +1,30 @@
+{
+    "name": "baleghsefat/laravel-jwt",
+    "description": "Json Web Token for Laravel and Lumen",
+    "type": "library",
+    "keywords": [
+        "lumen",
+        "laravel",
+        "jwt",
+        "auth"
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Baleghsefat\\Jwt\\": "src/"
+        },
+        "files": [
+            "app/helper.php"
+        ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Baleghsefat",
+            "email": "m.baleghsefat@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
