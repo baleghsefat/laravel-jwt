@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  php:
+    container_name: php_laravel_jwt
+    build:
+      context: ./php
+    restart: always
+    volumes:
+      - ./src:/home/app/src:Z
+      - ./composer.json:/home/app/composer.json:Z
+    working_dir: /home/app
+
