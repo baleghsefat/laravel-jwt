@@ -29,7 +29,7 @@ class LaravelJwtServiceProvider extends ServiceProvider
             $token = $request->header('authorization');
             if (isset($token)) {
                 if (isTokenValid($token)) {
-                    $tokenData = optional(tokenData($token));
+                    $tokenData = tokenData($token);
                     $user = new User();
                     foreach ($tokenData as $key => $value) {
                         $user->{$key} = $value;
