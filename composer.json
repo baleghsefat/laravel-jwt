@@ -16,7 +16,7 @@
             "Baleghsefat\\Jwt\\": "src/"
         },
         "files": [
-            "app/helper.php"
+            "src/helper.php"
         ]
     },
     "extra": {
