@@ -19,13 +19,6 @@
             "src/helper.php"
         ]
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "RandomPassword\\PasswordServiceProvider"
-            ]
-        }
-    },
     "license": "MIT",
     "authors": [
         {
