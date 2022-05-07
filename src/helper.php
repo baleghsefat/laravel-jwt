@@ -36,6 +36,13 @@ if (!function_exists('isJwtValid')) {
 
         // split the jwt
         $tokenParts = explode('.', $jwt);
+        if (
+            isset($tokenParts[0]) === false
+            || isset($tokenParts[1]) === false
+            || isset($tokenParts[2]) === false
+        ) {
+            return false;
+        }
         $header = base64_decode($tokenParts[0]);
         $payload = base64_decode($tokenParts[1]);
         $signature_provided = $tokenParts[2];
